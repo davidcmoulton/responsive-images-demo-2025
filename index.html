@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive images (2024)</title>
+</head>
+<body>
+  <h1>Responsive images (2024)</h1>
+  <h2>Use cases</h2>
+  <section>
+    <header>
+      <h3>image format switching</h3>
+      <p>(I want funky new image formats where available.)</p>
+    </header>
+    <p>Example: I want to offer AVIF images to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
+    <picture>
+      <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
+      <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
+      <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description">
+    </picture>
+  </section>
+</body>
+</html>
