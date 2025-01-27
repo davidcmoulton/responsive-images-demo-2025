@@ -12,13 +12,15 @@
   <main>
     <section id="example">
       <p>I want the browser to pick the image with the most appropriate pixel density for the user's display.</p>
-      <img 
-        srcset="
-          images/resolution-switching/resolution-switching-4x.png 4x, 
-          images/resolution-switching/resolution-switching-2x.png 2x"
-        src="images/resolution-switching/resolution-switching-1x.png" 
-        alt="Meaningful description" 
-        id="image">
+      <article class="canvas">
+        <img 
+          srcset="
+            images/resolution-switching/resolution-switching-4x.png 4x, 
+            images/resolution-switching/resolution-switching-2x.png 2x"
+          src="images/resolution-switching/resolution-switching-1x.png" 
+          alt="Meaningful description" 
+          id="image">
+      </article>
       <article>
         <code><pre>
           &lt;img

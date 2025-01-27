@@ -13,12 +13,14 @@
   <main>
     <section id="example">
       <p>Example: I want to offer bleeding edge image formats to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
-      <picture>
-        <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
-        <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
-        <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
-        <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description" id="image">
-      </picture>
+      <article class="canvas">
+        <picture>
+          <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
+          <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
+          <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
+          <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description" id="image">
+        </picture>
+      </article>
       <article>
         <code><pre>
           &lt;picture&gt;
