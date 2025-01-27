@@ -3,16 +3,23 @@
 
   const constructFilenameReportElement = () => {
     const filenameReportElement = doc.createElement('output');
-    filenameReportElement.innerHTML = 'Actual image path loaded: '
     doc.querySelector('#example').appendChild(filenameReportElement);
     return filenameReportElement;
   };
 
-  const showLoadedImageFilename = () => {
-    const imageElement = doc.querySelector('img#image');
-    constructFilenameReportElement().innerHTML += imageElement.currentSrc;
+  const reportImageFilename = (reporter, imageElement) => {
+    reporter.innerHTML = 'Actual image path loaded: ' + imageElement.currentSrc;
   }
 
-  win.addEventListener('load', showLoadedImageFilename, false);
+  win.addEventListener('load', () => {
+    const filenameReporter = constructFilenameReportElement();
+    const imageElement = doc.querySelector('img#image');
+    reportImageFilename(filenameReporter, imageElement);
+
+    win.addEventListener('resize', () => {
+      reportImageFilename(filenameReporter, imageElement);
+    }, false);
+
+  }, false);
 
 }(window));
