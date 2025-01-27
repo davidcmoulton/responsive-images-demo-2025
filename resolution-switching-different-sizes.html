@@ -3,47 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive images (2024): Resolution switching: different sizes</title>
+  <title>Resolution switching on different sizes | Responsive images use cases</title>
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js"></script>
 </head>
 <body>
-  <h1>Responsive images (2024): Resolution switching: different sizes</h1>
-  <h2>Use cases</h2>
-  <section id="example">
-    <header>
-      <h3>Resolution switching: different sizes</h3>
-      <p>At different viewport widths, my image will take up different amounts of space on the page. I want the browser to pick the most appropriate image for the user's context.</p>
-    </header>
-    <article class="canvas">
-      <img 
-        srcset="
-          images/resolution-switching/resolution-switching-900x200-2x.png 900w,
-          images/resolution-switching/resolution-switching-420x200-2x.png 420w", 
-        sizes="
-          (max-width: 900px) 200px,
-          900px"
-        src="images/resolution-switching/resolution-switching-900x200-1x.png" 
-        alt="Meaningful alt text" 
-        id="image">
-    </article>
-    <article>
-      <code><pre>
-        &lt;img
+  <h1>Responsive images use cases: resolution switching on different sizes</h1>
+  <p>At different viewport widths, my image will take up different amounts of space on the page. I want the browser to pick the most appropriate image for the user's context.</p>
+  <main>
+    <section id="example">
+      <article class="canvas">
+        <img 
           srcset="
             images/resolution-switching/resolution-switching-900x200-2x.png 900w,
-            images/resolution-switching/resolution-switching-420x200-2x.png 420w
-          ", 
+            images/resolution-switching/resolution-switching-420x200-2x.png 420w", 
           sizes="
             (max-width: 900px) 200px,
-            900px
-          "
-          src="images/resolution-switching/resolution-switching-1x.png"
-          alt="meaningful description" 
+            900px"
+          src="images/resolution-switching/resolution-switching-900x200-1x.png" 
           alt="Meaningful alt text" 
-        &gt;
-      </pre></code>
+          id="image">
       </article>
-  </section>
+      <article>
+        <code><pre>
+          &lt;img
+            srcset="
+              images/resolution-switching/resolution-switching-900x200-2x.png 900w,
+              images/resolution-switching/resolution-switching-420x200-2x.png 420w
+            ", 
+            sizes="
+              (max-width: 900px) 200px,
+              900px
+            "
+            src="images/resolution-switching/resolution-switching-1x.png"
+            alt="meaningful description" 
+            alt="Meaningful alt text" 
+          &gt;
+        </pre></code>
+        </article>
+    </section>
+    <nav>
+      <h2>Use cases</h2>
+      <ul>
+        <li><a href="resolution-switching-pixel-density.html">Resolution switching on pixel density</a></li>
+        <li>Resolution switching on different sizes</li>
+        <li><a href="format-switching.html">Format switching</a></li>
+        <li><a href="art-direction.html">Art direction</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 </html>

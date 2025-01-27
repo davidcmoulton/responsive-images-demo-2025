@@ -3,33 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resolution switching: pixel density | Responsive images use cases</title>
+  <title>Resolution switching on pixel density | Responsive images use cases</title>
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js"></script>
 </head>
 <body>
   <h1>Responsive images use cases: resolution switching on pixel density</h1>
-  <section id="example">
-    <p>I want the browser to pick the image with the most appropriate pixel density for the user's display.</p>
-    <img 
-      srcset="
-        images/resolution-switching/resolution-switching-4x.png 4x, 
-        images/resolution-switching/resolution-switching-2x.png 2x"
-      src="images/resolution-switching/resolution-switching-1x.png" 
-      alt="Meaningful description" 
-      id="image">
-    <article>
-      <code><pre>
-        &lt;img
-          srcset="
-            images/resolution-switching/resolution-switching-4x.png 4x, 
-            images/resolution-switching/resolution-switching-2x.png 2x
-          "
-          src="images/resolution-switching/resolution-switching-1x.png"
-          alt="meaningful description"
-        &gt;
-      </pre></code>
-    </article>
-  </section>
+  <main>
+    <section id="example">
+      <p>I want the browser to pick the image with the most appropriate pixel density for the user's display.</p>
+      <img 
+        srcset="
+          images/resolution-switching/resolution-switching-4x.png 4x, 
+          images/resolution-switching/resolution-switching-2x.png 2x"
+        src="images/resolution-switching/resolution-switching-1x.png" 
+        alt="Meaningful description" 
+        id="image">
+      <article>
+        <code><pre>
+          &lt;img
+            srcset="
+              images/resolution-switching/resolution-switching-4x.png 4x, 
+              images/resolution-switching/resolution-switching-2x.png 2x
+            "
+            src="images/resolution-switching/resolution-switching-1x.png"
+            alt="meaningful description"
+          &gt;
+        </pre></code>
+      </article>
+    </section>
+    <nav>
+      <h2>Use cases</h2>
+      <ul>
+        <li>Resolution switching on pixel density</li>
+        <li><a href="resolution-switching-different-sizes.html">Resolution switching on different sizes</a></li>
+        <li><a href="format-switching.html">Format switching</a></li>
+        <li><a href="art-direction.html">Art direction</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 </html>

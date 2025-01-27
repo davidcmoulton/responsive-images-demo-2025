@@ -3,35 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive images (2024): the format switching use case</title>
+  <title>Switching on image format | Responsive images use cases</title>
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js"></script>
 </head>
 <body>
-  <h1>Responsive images (2024)</h1>
-  <h2>Use cases</h2>
-  <section id="example">
-    <header>
-      <h3>image format switching</h3>
-      <p>(I want funky new image formats where available.)</p>
-    </header>
-    <p>Example: I want to offer bleeding edge image formats to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
-    <picture>
-      <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
-      <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
-      <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
-      <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description" id="image">
-    </picture>
-    <article>
-      <code><pre>
-        &lt;picture&gt;
-        &lt;source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" &gt;  
-        &lt;source srcset="images/format-switching/format-switching-image.avif" type="image/avif" &gt;
-        &lt;source srcset="images/format-switching/format-switching-image.png" type="image/png" &gt;
-        &lt;img src="images/format-switching/format-switching-image.jpg" alt="meaningful description"&gt;
-        &lt;/picture&gt;
-      </pre></code>
-      </article>
-  </section>
+  <h1>Responsive images use cases: switching on image format</h1>
+  <p>I want funky new image formats where available.</p>
+  <main>
+    <section id="example">
+      <p>Example: I want to offer bleeding edge image formats to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
+      <picture>
+        <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
+        <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
+        <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
+        <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description" id="image">
+      </picture>
+      <article>
+        <code><pre>
+          &lt;picture&gt;
+            &lt;source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" &gt;  
+            &lt;source srcset="images/format-switching/format-switching-image.avif" type="image/avif" &gt;
+            &lt;source srcset="images/format-switching/format-switching-image.png" type="image/png" &gt;
+            &lt;img src="images/format-switching/format-switching-image.jpg" alt="meaningful description"&gt;
+          &lt;/picture&gt;
+        </pre></code>
+        </article>
+    </section>
+    <nav>
+      <h2>Use cases</h2>
+      <ul>
+        <li><a href="resolution-switching-pixel-density.html">Resolution switching on pixel density</a></li>
+        <li><a href="resolution-switching-different-sizes.html">Resolution switching on different sizes</a></li>
+        <li>Switching on image format</a></li>
+        <li><a href="art-direction.html">Art direction</a></li>
+      </ul>
+    </nav>
+  </main>
 </body>
 </html>

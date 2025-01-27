@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive images (2024): the art direction use case</title>
+  <title>Art direction | Responsive images use cases</title>
   <link rel="stylesheet" href="styles/style.css">
   <script src="scripts/script.js"></script>
 </head>
 <body>
-  <h1>Responsive images (2024)</h1>
-  <h2>Use cases</h2>
-  <section id="example">
-    <header>
-      <h3>Art direction</h3>
-      <p>I want a different crop of my image on smaller screens where there isn't space to appreciate the sweeping landscape...</p>
-    </header>
-    <picture>
-      <source media="(min-width: 1000px)" srcset="images/art-direction/Roland-CII-landscape.jpg">
-      <img src="images/art-direction/Roland-CII-cropped.jpg" alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917" id="image">
-    </picture>
-    <article>
-      <code><pre>
-        &lt;picture&gt;
-        &lt;source media="(min-width: 1000px)" srcset="images/art-direction/landscape.png"&gt;  
-        &lt;img src="images/art-direction/Roland-CII-cropped.jpg" alt="meaningful description" alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917"&gt;
-        &lt;/picture&gt;
-      </pre></code>
-      </article>
-  </section>
+  <h1>Responsive images use cases: art direction</h1>
+  <p>I want a different crop of my image on smaller screens where there isn't space to appreciate the sweeping landscape...</p>
+  <main>
+    <section id="example">
+      <header>
+      </header>
+      <picture>
+        <source media="(min-width: 1000px)" srcset="images/art-direction/Roland-CII-landscape.jpg">
+        <img src="images/art-direction/Roland-CII-cropped.jpg" alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917" id="image">
+      </picture>
+      <article>
+        <code><pre>
+          &lt;picture&gt;
+            &lt;source 
+              media="(min-width: 1000px)" 
+              srcset="images/art-direction/landscape.png"
+            &gt;  
+            &lt;img 
+              src="images/art-direction/Roland-CII-cropped.jpg"
+              alt="meaningful description"
+              alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917"
+            &gt;
+          &lt;/picture&gt;
+        </pre></code>
+        </article>
+    </section>
+    <nav>
+      <h2>Use cases</h2>
+      <ul>
+        <li><a href="resolution-switching-pixel-density.html">Resolution switching on pixel density</a></li>
+        <li><a href="resolution-switching-different-sizes.html">Resolution switching on different sizes</a></li>
+        <li><a href="format-switching.html">Format switching</a></li>
+        <li><a href="art-direction.html">Art direction</a></li>
+      </ul>
+    </nav>
+
+  </main>
 </body>
 </html>
