@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive images (2024): Resolution switching: pixel density</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js"></script>
+</head>
+<body>
+  <h1>Responsive images (2024): Resolution switching: pixel density</h1>
+  <h2>Use cases</h2>
+  <section id="example">
+    <header>
+      <h3>Resolution switching: pixel density</h3>
+      <p>I want the browser to pick the image with the most appropriate pixel density for the user's display.</p>
+    </header>
+    <img 
+      srcset="
+        images/resolution-switching/resolution-switching-4x.png 4x, 
+        images/resolution-switching/resolution-switching-2x.png 2x"
+      src="images/resolution-switching/resolution-switching-1x.png" 
+      alt="Meaningful alt text" 
+      id="image">
+    <article>
+      <code><pre>
+        &lt;img
+          srcset="
+            images/resolution-switching/resolution-switching-4x.png 4x, 
+            images/resolution-switching/resolution-switching-2x.png 2x
+          "
+          src="images/resolution-switching/resolution-switching-1x.png"
+          alt="meaningful description" 
+          alt="Meaningful alt text" 
+        &gt;
+      </pre></code>
+      </article>
+  </section>
+</body>
+</html>
