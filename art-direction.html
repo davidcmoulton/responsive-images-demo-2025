@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive images (2024): the art direction use case</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js"></script>
+</head>
+<body>
+  <h1>Responsive images (2024)</h1>
+  <h2>Use cases</h2>
+  <section id="example">
+    <header>
+      <h3>Art direction</h3>
+      <p>I want a different crop of my image on smaller screens where there isn't space to appreciate the sweeping landscape...</p>
+    </header>
+    <picture>
+      <source media="(min-width: 1000px)" srcset="images/art-direction/Roland-CII-landscape.jpg">
+      <img src="images/art-direction/Roland-CII-cropped.jpg" alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917" id="image">
+    </picture>
+    <article>
+      <code><pre>
+        &lt;picture&gt;
+        &lt;source media="(min-width: 1000px)" srcset="images/art-direction/landscape.png"&gt;  
+        &lt;img src="images/art-direction/Roland-CII-cropped.jpg" alt="meaningful description" alt="Photograph of a 1/48 scale model Roland C2 biplane from 1917"&gt;
+        &lt;/picture&gt;
+      </pre></code>
+      </article>
+  </section>
+</body>
+</html>
