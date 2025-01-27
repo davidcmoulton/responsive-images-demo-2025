@@ -14,8 +14,9 @@
       <h3>image format switching</h3>
       <p>(I want funky new image formats where available.)</p>
     </header>
-    <p>Example: I want to offer AVIF images to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
+    <p>Example: I want to offer bleeding edge image formats to my users for [reasons], but I don't want to break my site for people whose browsers don't support it yet.</p>
     <picture>
+      <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
       <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
       <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
       <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description">
@@ -23,9 +24,10 @@
     <article>
       <code><pre>
         &lt;picture&gt;
-          &lt;source srcset="images/format-switching/format-switching-image.avif" type="image/avif" &gt;
-          &lt;source srcset="images/format-switching/format-switching-image.png" type="image/png" &gt;
-          &lt;img src="images/format-switching/format-switching-image.jpg" alt="meaningful description"&gt;
+        &lt;source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" &gt;  
+        &lt;source srcset="images/format-switching/format-switching-image.avif" type="image/avif" &gt;
+        &lt;source srcset="images/format-switching/format-switching-image.png" type="image/png" &gt;
+        &lt;img src="images/format-switching/format-switching-image.jpg" alt="meaningful description"&gt;
         &lt;/picture&gt;
       </pre></code>
       </article>
