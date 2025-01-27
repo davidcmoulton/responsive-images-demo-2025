@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive images (2024)</title>
+  <script src="scripts/escape.js"></script>
 </head>
 <body>
   <h1>Responsive images (2024)</h1>
@@ -19,6 +20,15 @@
       <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
       <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description">
     </picture>
+    <article>
+      <code><pre>
+        &lt;picture&gt;
+          &lt;source srcset="images/format-switching/format-switching-image.avif" type="image/avif" &gt;
+          &lt;source srcset="images/format-switching/format-switching-image.png" type="image/png" &gt;
+          &lt;img src="images/format-switching/format-switching-image.jpg" alt="meaningful description"&gt;
+        &lt;/picture&gt;
+      </pre></code>
+      </article>
   </section>
 </body>
 </html>
