@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive images (2024)</title>
-  <script src="scripts/escape.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <script src="scripts/script.js"></script>
 </head>
 <body>
   <h1>Responsive images (2024)</h1>
   <h2>Use cases</h2>
-  <section>
+  <section id="example">
     <header>
       <h3>image format switching</h3>
       <p>(I want funky new image formats where available.)</p>
@@ -19,7 +20,7 @@
       <source srcset="images/format-switching/format-switching-image.jxl" type="image/jxl" >
       <source srcset="images/format-switching/format-switching-image.avif" type="image/avif" >
       <source srcset="images/format-switching/format-switching-image.png" type="image/png" >
-      <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description">
+      <img src="images/format-switching/format-switching-image.jpg" alt="meaningful description" id="image">
     </picture>
     <article>
       <code><pre>
