@@ -8,7 +8,9 @@
   };
 
   const reportImageFilename = (reporter, imageElement) => {
-    reporter.innerHTML = 'Actual image path loaded: ' + imageElement.currentSrc;
+    const imageFilename = imageElement.currentSrc.replace(/http:\/\/[^/]+/, '');
+    console.log('imageFilename', imageFilename);
+    reporter.innerHTML = 'Actual image path loaded: ' + imageFilename;
   }
 
   win.addEventListener('load', () => {
