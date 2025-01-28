@@ -7,6 +7,10 @@
 </head>
 <body>
   <h1>Responsive images use cases</h1>
+  <p>One image size doesn't fit all if we're trying to be inclusive for our users. Factors which may affect whether it's a good idea to load an image inlcude: bandwidth, network latency, device capacity, device battery usage, viewport size, display resolution etc etc...</p>
+  <p>CSS can control which background image is loaded, but it doesn't control images loaded by the HTML.</p>
+  <p>To allow the most appropriate image to be loaded, we can supply a number of them and in our HTML we can either specify which to use in a particular set of circumstances, or allow the browser to choose based on what it knows about the user's context.</p>
+  <p>This set of techniques is known as responsive images. These are the main use cases:</p>
   <ul>
     <li><a href="resolution-switching-pixel-density.html">resolution-switching: pixel density</a></li>
     <li><a href="resolution-switching-different-sizes.html">resolution-switching: different sizes</a></li>
